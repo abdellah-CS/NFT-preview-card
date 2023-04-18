@@ -1,0 +1,172 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+h2:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.crd1 {
+    height: 781px;
+}
+
+.crd2 {
+    z-index: 1;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(217, 53%, 10%);
+    width: 440px;
+    height: 629px;
+    margin: 0% auto 0% auto;
+    border-radius: 20px;
+}
+
+.crd3 {
+    position: relative;
+    margin: 0% auto 0% auto;
+    top: 9em;
+    width: 387px;
+    height: auto;
+    border: 0px;
+    border-radius: 20px;
+    padding: 12px;
+    background-color: hsl(216, 50%, 16%);
+    z-index: 10;
+    box-shadow: 0px 4px 6px hsla(217, 53%, 10%, 0.1), 0px 1px 3px hsla(217, 53%, 10%, 0.08);
+}
+
+.crd-body {
+    text-align: left;
+    margin: 12px;
+}
+
+.crd-txt {
+    color: hsl(215, 51%, 70%);
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 18px;
+   padding-bottom: 12px;
+}
+
+.first {
+    color: hsl(178, 100%, 50%);
+    margin-right: 100px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.second {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+hr {
+    border: solid 1px;
+    border-color: hsl(215, 32%, 27%);
+}
+ 
+.creator {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.spl {
+    color: hsl(0, 0%, 100%);
+}
+
+.spl:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.image-container {    
+  position: relative;
+  left: 6px;
+  width: 330px;
+  margin: 15px 10px 10px 10px;
+}
+
+.image-container img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.image-overlay { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(178, 100%, 50%); /* adjust the color and opacity to your desired effect */
+  opacity: 0;
+  transition: opacity 0.45s ease-in-out;
+}
+
+.image-container:hover .image-overlay {
+    opacity: .5;
+}
+
+@media(max-width = 1700px)
+{
+    .crd2 {
+        background-color: hsl(217, 54%, 11%);
+        width: 0px;
+        height: 0px;
+        z-index: -1;
+    }
+}
+
+@media(max-width: 452px)
+{
+    .crd3 {
+        width: 300px;
+        padding: 10px;
+    }
+
+    .image-container {
+        width: 247px;
+    }
+
+    .crd2 {
+        width: 350px;
+        height: 510px;
+        top: 56%;
+    }
+
+    .crd3 .infos .first {
+        margin-right: 37px;
+    }
+}
+
+@media(max-width: 318px)
+{
+    .crd3 {
+        width: 286px;
+    }
+
+    .image-container {
+        width: 234px;
+    }
+
+    .crd2 {
+        width: 300px;
+        height: 557px;
+        top: 62%;
+    }
+}
